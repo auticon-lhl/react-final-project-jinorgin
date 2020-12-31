@@ -1,0 +1,152 @@
+.App {
+  min-height: 100vh;
+  width: 100%;
+  font-size: 16px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.App > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  background-color: grey;
+}
+.App > header h1 {
+  font-style: normal;
+}
+.App > header .date {
+  font-weight: 700;
+}
+
+.App > form {
+  width: 80vw;
+  min-width: 300px;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  border: 0.2em solid lightgray;
+  padding: 1em 1.5em;
+}
+.App > form input {
+  border: none;
+  border-bottom: 0.2em solid black;
+  width: 20%;
+  padding: 0.25em;
+}
+.App > form input:first-of-type {
+  width: 40%;
+}
+.App > form button {
+  background: white;
+  border: 0.2em blue;
+  color: black;
+  padding: 0.25em;
+  font-weight: 700;
+}
+.App > form button:hover {
+  cursor: pointer;
+  color: green;
+  border-color: var(--primary-color);
+}
+
+.App main ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.App main ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  min-width: 300px;
+  max-width: 900px;
+  list-style-type: none;
+  border: 0.2em solid black;
+  padding: 1em 1.5em;
+  margin: 1em 0;
+}
+
+.App main ul li.complete {
+  opacity: 0.5;
+}
+
+
+.App main ul li.complete span {
+  text-decoration: line-through;
+}
+
+.App main ul li .due {
+  display: inline-block;
+  margin-right: 0.5em;
+  font-weight: 900;
+  font-style: italic;
+}
+.App main ul li .due.good {
+  color: green;
+}
+.App main ul li .due.short {
+  color: orange;
+}
+.App main ul li .due.late {
+  color: red;
+}
+.App main ul li div {
+  margin-left: auto;
+}
+main ul li div button {
+  font-size: 1.1em;
+  font-weight: 900;
+  color: var(--secondary-color);
+  margin: 0 0.5em;
+  width: 2em;
+  height: 2em;
+  border: 0.1em solid var(--secondary-color);
+  background: none;
+}
+main ul li div button:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+  border: 0.1em solid var(--primary-color);
+}
+main ul li div button:hover.check {
+  background: green;
+}
+main ul li div button:hover.delete {
+  background: red;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: var(--secondary-bg-color);
+}
+footer span:last-of-type {
+  display: inline-block;
+  font-weight: 700;
+  margin-left: 0.5em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: var(--secondary-bg-color);
+}
+footer span:last-of-type {
+  display: inline-block;
+  font-weight: 700;
+  margin-left: 0.5em;
+}
